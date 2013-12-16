@@ -1,6 +1,10 @@
 Lets play with [D3](http://d3js.org/)!
 ==
+[Sliding window Area chart](http://alyssaq.github.io/d3-fun/focus-area.html)
+
 [2-column data source](https://docs.google.com/spreadsheet/ccc?key=0Ar2GM8qvM90xdGVzUUY3YmU5a3RybEdkakNZSUZVdFE&usp=sharing)
+
+
 
 Running a simple HTTP server
 ==
