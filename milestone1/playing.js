@@ -41,12 +41,29 @@
     .data(dataset)
     .style("height", function(d) {
       return (d * 5) + "px";
-    })
+    });
 
     d3.select(".data").selectAll("p")
     .data(dataset)
     .text(function(a, b) {
       return b + ": " + a;
-    })
+    });
+  });
+
+  var SVGELEM = {w: 500, h: 50};
+  var svg = d3.select("#svgElem")
+    .append("svg")
+    .attr("width", SVGELEM.w)
+    .attr("height", SVGELEM.h),
+  circles = svg.selectAll("circle")
+    .data(dataset)
+    .enter()
+    .append("circle");
+  circles.attr("cx", function(d, i) {
+    return (i * 50) + 25;
   })
+  .attr("cy", h/2)
+  .attr("r", function(d) {
+    return d;
+  });
 })();
